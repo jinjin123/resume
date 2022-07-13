@@ -13,22 +13,13 @@
 
 <body style="zoom: 1; padding-right: 0px;">
    </body>
-	<script type="text/javascript">
-/**
- * 创建一个跳转的a元素，模拟发送click请求后将该元素从文档中删除
- */
-function openNewWindow(url) {
-	$('body').append($('<a href="' + url + '" target="_blank" id="openNewWindow"></a>'))
-	document.getElementById("openNewWindow").click(); //点击事件
-	$('#openNewWindow').remove();
-}
+
 </script>
 		<script>
 			
-			openNewWindow("https://jinjin123.github.io/resume/index2.html");
-			setTimeout(function(){
-                        	window.location.href = "https://jinjin123.github.io/resume/Resume.pdf"
-			},500)
+			$(function(){
+				window.location.href = "https://jinjin123.github.io/resume/Resume.pdf"
+			})
 		</script>
 
 
